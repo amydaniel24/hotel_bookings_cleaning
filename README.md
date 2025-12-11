@@ -1,39 +1,91 @@
-# Hotel Bookings Data Cleaning
+# Hotel Bookings Data Cleaning Project
 
 This project was to get familiar with the datacleaning in Python using the "Hotel Bookings" dataset from Kaggle.
 
-## Project Steps
+This repository contains my work for learning and practicing data cleaning with pandas. The data used is the “Hotel Bookings” dataset, downloaded from Kaggle. The goal of this project is simple enough: take a messy dataset, clean it up, and try not to accidentally delete the entire thing in the process.
 
-### 1. Load the Dataset
-- Downloaded and extracted dataset from Kaggle
-- Imported pandas
-- Loaded `hotel_bookings.csv` 
-- Looked at the dataset using `.head()`
+There are two Jupyter notebooks in this project, so I listed them below so nobody (including me) gets confused later:
 
-### 2. Look at the Dataset
-- Checked shape, column names, and data types (`df.info()`)
-- Checked statistics with `.describe()`
-- Found missing values with `df.isna().sum()`
+1. data_cleaning_walkthrough.ipynb
 
-### 3. Handle Duplicates
-- Identified duplicate rows
-- Removed duplicates and reset the index
+This notebook follows along with a YouTube tutorial step by step.
+If the instructor did it, I did it right behind her like a kid following footprints in wet concrete.
 
-### 4. Fix Invalids
-- Created a new column `total_guests = adults + children + babies`
-- Removed rows where total guests equaled zero 
+This notebook includes:
 
-### 5. Handle Missing Values
-- Filled missing children values with 0
-- Replaced missing country values with `Unknown`
-- Filled missing `agent` and `company` values with 0 or 'None'
+Loading the dataset
 
-### 6. Convert and Create Date Columns
-- Converted `reservation_status_date` to a datetime 
-- Combined year, month, and day columns to create a full `arrival_date` column
+Inspecting columns and data types
 
-### 7. Save Cleaned Dataset
-- Exported the cleaned dataset to `data/hotel_bookings_cleaned.csv`
+Dropping unnecessary columns
 
----
+Handling missing values
+
+Cleaning inconsistent entries
+
+Renaming columns
+
+This notebook represents the “learning along with someone else” version.
+
+
+2. hotel_bookings_cleaning.ipynb
+
+This notebook is the version that I attempted to do independently. It follows the same overall cleaning steps but I just wanted to see if I could clean it without someone holding my hand. 
+
+This notebook includes:
+
+Loading and viewing the dataset
+
+Dropping and renaming columns
+
+Converting data types
+
+Handling missing values 
+
+Using fillna, dropna, and conditional replacements
+
+Additional checks 
+
+This notebook is the “I hope I actually understand what is happening now” version.
+
+
+# Files in This Repository
+
+data/hotel_bookings_cleaned.csv
+hotel_bookings.csv
+data_cleaning_walkthrough.ipynb
+hotel_bookings_cleaning.ipynb
+README.md
+
+# How to Run These Notebooks
+
+Download or clone the repository
+
+Open the folder in VS Code
+
+Install the needed Python packages (mainly pandas and numpy)
+
+Open either notebook and run the cells from top to bottom
+
+Try not to panic when pandas gives you a warning. It does that to everyone. I hope.
+
+# Purpose of This Repository
+
+
+Practice real-world data cleaning
+
+Follow a structured tutorial
+
+Apply what I learned by rewriting the cleaning process myself
+
+Build confidence working in pandas
+
+Have reference notebooks I can come back to later
+
+Prepare for more advanced analysis and visualizations
+
+
+
+
+
 

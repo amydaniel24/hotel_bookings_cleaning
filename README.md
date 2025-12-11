@@ -2,9 +2,11 @@
 
 This project was to get familiar with the datacleaning in Python using the "Hotel Bookings" dataset from Kaggle.
 
-This repository contains my work for learning and practicing data cleaning with pandas. The data used is the “Hotel Bookings” dataset, downloaded from Kaggle. The goal of this project is simple enough: take a messy dataset, clean it up, and try not to accidentally delete the entire thing in the process.
+This repository contains my work for learning and practicing data cleaning with pandas. The data used is the “Hotel Bookings” dataset. The goal of this project is simple enough: take a messy dataset, clean it up, and try not to accidentally delete the entire thing in the process.
 
 There are two Jupyter notebooks in this project, so I listed them below so nobody (including me) gets confused later:
+
+
 
 1. data_cleaning_walkthrough.ipynb
 
@@ -26,6 +28,10 @@ Cleaning inconsistent entries
 Renaming columns
 
 This notebook represents the “learning along with someone else” version.
+
+
+
+
 
 
 2. hotel_bookings_cleaning.ipynb
@@ -52,9 +58,13 @@ This notebook is the “I hope I actually understand what is happening now” ve
 # Files in This Repository
 
 data/hotel_bookings_cleaned.csv
+
 hotel_bookings.csv
+
 data_cleaning_walkthrough.ipynb
+
 hotel_bookings_cleaning.ipynb
+
 README.md
 
 # How to Run These Notebooks
